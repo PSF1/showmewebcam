@@ -39,6 +39,13 @@ For debugging, a 115200 baud serial interface is provided as a ttyACM device:
 - Please use screen or minicom to connect to it.
 - Use username: `root`, password `root`.
 
+Ubuntu example:
+```
+$ ll /dev/ttyACM*
+crw-rw---- 1 root dialout 166, 0 sep 25 14:03 /dev/ttyACM0
+$ screen /dev/ttyACM0 115200
+```
+
 Also, there is a *untested* serial interface on the serial 40-pin header: https://pinout.xyz/pinout/uart
 
 If you want to modify the image content the quick-and-dirty way (not recommended):
